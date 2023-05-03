@@ -1,0 +1,313 @@
+html {
+  background-color: #ccc;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: #15963c
+}
+
+a:hover, a:focus {
+  color: #b61818;
+}
+
+/* NavBar */
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 75px;
+  background-color: #15B946;
+  color: #000;
+  display: block;
+  width: 100%;
+  font-size: 1.5em;
+}
+
+#nav nav {
+  clear: left;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#nav img {
+  clear: right;
+}
+
+#nav a:link, a:visited {
+  color: #000;
+}
+
+#nav a:hover, a:focus {
+  color: #fffc34;
+}
+
+#nav nav img {
+  height: 60px;
+}
+
+#nav nav a {
+  text-decoration: none;
+  padding: 20px;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 60%;
+  padding: 10vh;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 3.5em;
+  margin: 20px 0 20px 0;
+}
+
+.hero h2 {
+  font-size: 2em;
+  margin: 20px 0 20px 0;
+}
+
+.hero_link {
+  display: flex;
+}
+
+.hero_link img {
+  align-self: flex-end;
+}
+
+/* Accessories */
+.accs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.controllers img {
+  border-radius: 50%;
+}
+
+.headsets img {
+  border-radius: 50%;
+}
+
+.pc_accs img {
+  border-radius: 50%;
+}
+
+/* Games */
+.game {
+  display: flex;
+  justify-content: space-around;
+}
+
+      /* xbox */
+.xbox {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1em;
+}
+
+.xbox img {
+  height: 308px;
+  width: 240px;
+  align-self: center;
+}
+
+      /* Playstation */
+.playStation {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1em;
+}
+
+.playStation img {
+  height: 308px;
+  width: 240px;
+  align-self: center;
+}
+
+
+      /* Switch */
+.switch {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1em;
+}
+
+.switch img {
+  height: 308px;
+  width: 200px;
+  align-self: center;
+}
+
+      /* GameCube */
+.gameCube {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1em;
+}
+
+.gameCube img {
+  height: 308px;
+  width: 240px;
+  align-self: center;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #15B946;
+  padding: .3em;
+}
+
+/* Media Queries */
+/* Phone */
+@media (min-width: 479px) {
+  .accs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+/*
+  #nav nav {
+    position: fixed;
+    top: 75px;
+    font-size: .7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #nav nav a {
+    padding: 5px;
+  }*/
+
+  #nav {
+    height: 40px;
+  }
+
+  #nav .row {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  #nav nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #nav img {
+    height: 40px;
+  }
+
+  #nav nav a {
+    padding: .2em;
+    background-color: #15B946;
+  }
+
+  #nav a {
+    font-size: .8em;
+  }
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+  .accs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  #nav nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  #nav {
+    height: 60px;
+  }
+  
+  #nav .row {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  #nav img {
+    height: 60px;
+  }
+
+  #nav a {
+    font-size: 1em;
+  }
+
+  #nav nav a {
+    padding: .2em;
+    background-color: #15B946;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .game {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  #nav nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  #nav nav a {
+    font-size: 1.2em;
+    padding: 0 1em 0 1em;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #nav {
+    height: 75px;
+  }
+
+  #nav img {
+    height: 75px;
+  }
+}
